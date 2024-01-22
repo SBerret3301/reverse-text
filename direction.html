@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the document -->
+    <title>Text Direction Styling</title>
+</head>
+<style>
+    /* Apply styles to the second paragraph following another paragraph */
+    p + p {
+        direction: rtl;             /* Set the text direction to right-to-left */
+        unicode-bidi: bidi-override; /* Override the bidirectional algorithm */
+    }
+</style>
+<body>
+    <!-- Display the first paragraph with regular text direction -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quibusdam eius cupiditate expedita molestiae mollitia sint modi laboriosam natus, eligendi porro, ducimus illum nobis ipsa nemo consequatur earum eos maxime?</p>
+    
+    <!-- Display the second paragraph with right-to-left text direction -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quibusdam eius cupiditate expedita molestiae mollitia sint modi laboriosam natus, eligendi porro, ducimus illum nobis ipsa nemo consequatur earum eos maxime?</p>
+</body>
+</html>
